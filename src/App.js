@@ -5,7 +5,7 @@ import { Container } from '@mantine/core';
 
 function App() {
   return (
-    <Stack>
+    <Stack className='bg-white-bg'>
       <Header />  
       <Projects />
       <Container className="mt-[500px]" id="about-me">

@@ -8,11 +8,11 @@ export default function ProjectCard({image_src, title, text, link_to, badge}) {
                     <Card.Section>
                         <Image
                         src={image_src}
-                        height={160}
+                        height={200}
                         alt={title}
                         />
                     </Card.Section>
-                    <Flex direction={"column"} className="relative">
+                    <Flex direction={"column"} className="relative min-h-[50px]">
                         <Group justify="space-between" mt="md" mb="xs">
                             <Text fw={600}>{title}</Text>
                             {badge && badge.map(b => 
@@ -32,7 +32,6 @@ export default function ProjectCard({image_src, title, text, link_to, badge}) {
                                 mt="md" 
                                 radius="md"
                                 component="a"
-                                className="relative bottom-0"
                                 href={link_to}>
                             See more
                         </Button>
