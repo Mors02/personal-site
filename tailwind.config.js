@@ -11,15 +11,15 @@ module.exports = {
       'github': "url('/src/Logos/github.svg')",
       'unreal': "url('/src/Logos/unreal.svg')",
       'react': "url('/src/Logos/react.svg')",
-      'logos': "url('/src/Logos/bg.png'), linear-gradient(to right bottom, #CB793A, #FCDC4D)"
+      'logos': "url('/src/Logos/bg.png'), linear-gradient(to right bottom, #E8E9F3, #272635)"
       }
     },
     colors: {
-      'light1': "#FCDC4D",
-      'light2': "#CB793A",
-      'mid': "#9A031E",
-      'dark1': "#5F0F40",
-      'dark2': "#321325",
+      'light1': "#E8E9F3",
+      'light2': "#CECECE",
+      'mid': "#A6A6A8",
+      'dark1': "#272635",
+      'dark2': "#161925",
       'white-bg': "#F4F1BB"   
     }
   },

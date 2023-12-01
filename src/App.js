@@ -2,15 +2,14 @@ import { Stack } from '@mantine/core';
 import Header from './Components/Header';
 import Projects from './Components/Projects';
 import { Container } from '@mantine/core';
+import AboutMe from './Components/AboutMe';
 
 function App() {
   return (
-    <Stack className='bg-white-bg'>
+    <Stack className=''>
       <Header />  
       <Projects />
-      <Container className="mt-[500px]" id="about-me">
-        asdasdasd
-      </Container>  
+      <AboutMe />      
     </Stack>  
   );
 }
