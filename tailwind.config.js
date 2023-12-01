@@ -1,6 +1,9 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ "./src/**/*.{js,jsx,ts,tsx}",],
+  //corePlugins: {preflight: false},
+  content: [ "./src/**/*.{js,jsx,ts,tsx}", './resources/js/**/*.jsx',],
   theme: {
     extend: {},
     colors: {
@@ -11,6 +14,6 @@ module.exports = {
       'dark2': "#321325"    
     }
   },
-  plugins: [],
+  plugins: []
 }
 
