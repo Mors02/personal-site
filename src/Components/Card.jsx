@@ -22,7 +22,7 @@ export default function ProjectCard({image_src, title, text, link_to, badge}) {
                             }
                         </Group>
 
-                        <Text size="sm" color="dark2" className="min-h-[70px]">
+                        <Text size="sm" color="black" className="min-h-[70px]">
                             {text}
                         </Text>
 
