@@ -4,7 +4,7 @@ import React from "react";
 export default function ProjectCard({image_src, title, text, link_to, badge}) {
                 
                 return(
-                <Card className="bg-light1 mx-auto w-80" shadow="sm" radius="md" withBorder>
+                <Card className="bg-light1 mx-auto w-96" shadow="sm" radius="md" withBorder>
                     <Card.Section>
                         <Image
                         src={image_src}
