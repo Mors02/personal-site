@@ -7,10 +7,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-      'unity': "url('/src/Logos/unity.svg')",
-      'github': "url('/src/Logos/github.svg')",
-      'unreal': "url('/src/Logos/unreal.svg')",
-      'react': "url('/src/Logos/react.svg')",
       'logos': "url('/src/Logos/bg.png'), linear-gradient(to right bottom, #CB793A, #FCDC4D)"
       }
     },
