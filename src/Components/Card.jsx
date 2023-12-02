@@ -16,13 +16,13 @@ export default function ProjectCard({image_src, title, text, link_to, badge}) {
                         <Group justify="space-between" mt="md" mb="xs">
                             <Text fw={600}>{title}</Text>
                             {badge && badge.map(b => 
-                                (<Badge variant="filled" color="dark1">
+                                (<Badge variant="filled" color="mid">
                                 {b}
                                 </Badge>)) 
                             }
                         </Group>
 
-                        <Text size="sm" color="black" className="min-h-[70px]">
+                        <Text size="md" color="black" className="min-h-[70px]">
                             {text}
                         </Text>
 
