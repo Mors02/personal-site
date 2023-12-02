@@ -1743,6 +1743,13 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@mantine/carousel@6.0.10":
+  version "6.0.10"
+  resolved "https://registry.yarnpkg.com/@mantine/carousel/-/carousel-6.0.10.tgz#9bc8346601a1ea9c775afa19ceed5046696cd5d3"
+  integrity sha512-zYYNnGhsU8vXM37fyDg6jFmmPviE/yK5LfEn40VdAn0cLalELRrrgEvn4wp1u6N9rikp5TlHL6szH0zfJunomA==
+  dependencies:
+    "@mantine/utils" "6.0.10"
+
 "@mantine/core@6.0.10":
   version "6.0.10"
   resolved "https://registry.yarnpkg.com/@mantine/core/-/core-6.0.10.tgz#51657b15fea8d0201033e1a182d636eaf35db3fd"
@@ -4245,6 +4252,18 @@ electron-to-chromium@^1.4.535:
   version "1.4.600"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.600.tgz#10ad8a5edc3f92a9a70b4453157ec2261c6db088"
   integrity sha512-KD6CWjf1BnQG+NsXuyiTDDT1eV13sKuYsOUioXkQweYTQIbgHkXPry9K7M+7cKtYHnSUPitVaLrXYB1jTkkYrw==
+
+embla-carousel-react@7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-7.0.5.tgz#c6a079e382432335e34adb16bb11558df047760c"
+  integrity sha512-qhw980gKj7G+O5d3WSwj0TyhcbpGP3DqJPiAatt1t3wEEcZqn7csaIfLh4e1N/0kna9sZfZZRzz+//NSrUodSg==
+  dependencies:
+    embla-carousel "7.0.5"
+
+embla-carousel@7.0.5:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-7.0.5.tgz#b43e590c072d06a5b11d4ce19d024f5f07a62862"
+  integrity sha512-loRcu0La0F7bhEMwbvgpi14iaaIEdwacH1xoplnaYfwN4KMgECkiuLgu4lx+v6MYd6lSpg/bw7ZxEuLUwYjavg==
 
 emittery@^0.10.2:
   version "0.10.2"
