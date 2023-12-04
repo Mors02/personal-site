@@ -12,8 +12,8 @@ import ProjectArea from "./ProjectArea";
 export default function AboutMe() {
 
         return (
-                <ProjectArea title="About me">
-                    <Flex className="mt-5 px-4" direction={"row"} id="about-me">
+                <ProjectArea title="About me" id="about-me">
+                    <Flex className="px-4" direction={"row"}>
                         <Image src={my_photo} height={340} withBorder width={240} className="mr-3"/>
                         <Box className="text-justified mx-10 w-3/6">
                             <Text className="text-4xl mt-3 ml-4" fw={600}>Hi, my name is Leonardo Morselli.</Text>
