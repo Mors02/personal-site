@@ -7,13 +7,12 @@ import my_photo from '../Logos/my_photo2.jpg';
 import linkedin from '../Logos/linkedin.svg';
 import cv from '../Logos/cv.png';
 import outlook from '../Logos/outlook.png';
+import ProjectArea from "./ProjectArea";
 
 export default function AboutMe() {
 
         return (
-            <Box className="mx-auto w-10/12 my-12">
-                <Paper p="xl" className="bg-gradient-to-t from-light1 to-white-bg rounded-xl mt-5">
-                    <Title order={1} className="ml-4">About Me</Title>
+                <ProjectArea title="About me">
                     <Flex className="mt-5 px-4" direction={"row"} id="about-me">
                         <Image src={my_photo} height={340} withBorder width={240} className="mr-3"/>
                         <Box className="text-justified mx-10 w-3/6">
@@ -57,7 +56,6 @@ export default function AboutMe() {
                         <iframe width="100%" height="250" src="https://time.graphics/it/embed?v=1&id=863098" frameborder="0" allowfullscreen></iframe>
                         <div><a rel="nofollow" style={{fontSize: "12px", textDecoration: "none"}} title="Timeline project maker" href="https://time.graphics">Timeline project maker</a></div>            
                     </Box>
-                </Paper>
-            </Box>
+                </ProjectArea>
         )
 }
