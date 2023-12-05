@@ -1,6 +1,4 @@
 import React from "react";
-
-import { Container, Flex, Image, Group, Badge, Text, Button } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import ProjectCard from "./Card";
 import my_photo from '../Logos/my_photo2_cr.jpg';
