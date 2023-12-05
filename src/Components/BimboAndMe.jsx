@@ -1,23 +1,57 @@
 import React from "react";
 import ProjectArea from "./ProjectArea";
 import inventory from "../Gifs/inventory.gif";
-import { Image, Flex, Text } from "@mantine/core";
+import fight from "../Gifs/fight.gif";
+import messy_inventory from "../Gifs/messy inventory.PNG"
+import death from "../Gifs/death.gif";
+import { Image, Flex, Text, Button, Box } from "@mantine/core";
 
 export default function BimboAndMe() {
+
+    const bodyCss = "text-3xl mt-2 ml-4 text-justify";
+    const titleCss = "text-4xl mt-3";
+    const highlight = "font-semibold text-mid"
     return (
         <ProjectArea title="Bimbo & Me" id="bimbo">
             <Flex>
-                <Image src={inventory}  height={300} width={400}/>
-                <Text className="text-3xl mt-2 ml-4" fw={400}>
-                    <Text component="span"className="text-4xl mt-3" fw={600}>The idea for this game started when I wanted to create a complex inventory system.</Text>
+                <Image src={inventory} className="ml-4" height={300} width={400}/>
+                <Text className={bodyCss} fw={400}>
+                    <Text component="span"className={titleCss} fw={600}>The idea for this game started when I wanted to create a <span className={highlight}>complex inventory system.</span></Text>
                     <br />
-                    As shown on the side, each item has multiple highlighted sides which upgrades other items. To do this, I used a custom graph that holds
-                    all the items in the inventory as nodes and creates or removes edges based when needed. The hardest thing was make everything update correctly,
-                    since the items could upgrade based on a value that is upgraded itself, needing very precise cascading upgrades.
+                    Each item has multiple highlighted sides which upgrades other items. To do this, I used a <span className={highlight}>custom graph</span> that holds
+                    all the items in the inventory as nodes and creates or removes edges when needed. The <span className={highlight}>most important thing</span> was making everything update correctly,
+                    since the items could upgrade based on a value that is upgraded itself, needing <span className={highlight}>very precise cascading upgrades</span>.
                 </Text>
             </Flex>
-            
-            
+            <Text className={bodyCss}>Also, items could take more than one slot, creating the necessity for <span className={highlight}>composite sprites</span>. This complicates the logic of the items, since more than one instance of them
+            exists inside the inventory.</Text>
+            <Flex>
+                <Text className={bodyCss} fw={400}>
+                    <Text component="span"className={titleCss} fw={600}>Each weapon is the result of <span className={highlight}>multiple scripts</span> that control its behaviour.</Text>
+                    <br />
+                    For the gameplay I went with a simplified version of <span className={highlight}>Vampire Survivors</span>. Using the items dropped you can create some
+                    <span className={highlight}> powerful combos</span> that can let you slay waves of enemies. 
+                    Each item has <span className={highlight}>3 scripts</span>: one for setting up the composite sprites in the inventory when you pick it up, one for the upgrade behaviour, one for the actual effect of the weapon or passive item.
+                    All of this for an ever expanding loot pool to let the player express their playstyle to the max.
+                </Text>
+                <Image src={fight} className="mt-3 ml-4" height={300} width={400}/>
+            </Flex>
+            <Flex>
+                <Image src={death} className="mt-5 ml-4" height={300} width={400}/>
+                <Text className={bodyCss} fw={400}>
+                    <Text component="span"className={titleCss} fw={600}>When you die, it's <span className={highlight}>not over yet</span>.</Text>
+                    <br />
+                    During the game you can find eggs that will spawn <span className={highlight}>your kid</span>. He will follow you around, with his <span className={highlight}>own inventory</span> and stats.
+                    Each time a generation passes, you can <span className={highlight}>improve your genes</span> to get better and stronger. And when you die, you  <span className={highlight}>will play as your own child</span>, with everything you have
+                    left him with. So be prepared when <span className={highlight}>your time eventually comes...</span>
+                </Text>
+                <Image src={messy_inventory} className="mt-4 ml-4" height={300} width={300}/>
+            </Flex>
+            <Box  className="mt-6 mx-auto w-64">
+                <Button className="w-64 h-12" color="light2">
+                    Play it now on Itch.io
+                </Button>
+            </Box>
         </ProjectArea>
     )
 
