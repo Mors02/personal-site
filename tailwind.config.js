@@ -17,6 +17,16 @@ module.exports = {
       'dark1': "#5F0F40",
       'dark2': "#321325",
       'white-bg': "#F4F1BB"   
+    },
+    screens: {
+      'mobile': '375px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
     }
   },
   plugins: []

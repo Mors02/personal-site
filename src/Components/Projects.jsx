@@ -6,12 +6,17 @@ import bimbo from '../Logos/bimbo.png';
 import unreal from '../Logos/unreal-engine.svg';
 import github from '../Logos/github.svg';
 
+import { useMediaQuery } from "@mantine/hooks";
+
 export default function Projects() {
+
+    const matches = useMediaQuery('(min-width: 56.25em)');
+
     return (
         <>
             <Carousel
             withIndicators
-            height={400}
+            height={matches? 400 : 300}
             slideSize="25%"
             slideGap="xs"
             loop
@@ -25,13 +30,13 @@ export default function Projects() {
                     <ProjectCard image_src={bimbo} title={"Bimbo & Me"} text={"My first real project using Unity2D, it's a rogue-like vampire survivor style game. "} link_to={"#bimbo"} badge={["Unity", "2d"]}/>
                 </Carousel.Slide>
                 <Carousel.Slide>
-                    <ProjectCard image_src={unreal} title={"Mages"} text={"With Unreal Engine 5 I created a simple FPS with a twist about the shooting mechanic."} badge={["UE4", "3d"]}/>
+                    <ProjectCard image_src={unreal} title={"Mages"} text={"With Unreal Engine 5 I created a simple FPS with a twist about the shooting mechanic."} badge={["UE5", "3d"]}/>
                 </Carousel.Slide>
                 <Carousel.Slide>
                     <ProjectCard image_src={github} title={"Docpack"} text={"With NodeJs and React I managed a steady and robust managing software for packaging. "} badge={["Nodejs", "React"]}/>
                 </Carousel.Slide>
                 <Carousel.Slide>
-                    <ProjectCard image_src={github} title={"Bonobo"} text={"At Bonobo S.r.L I had the pleasure to work in a young and fast-paced envinroment, it was a big contributor to my experience."} badge={["Github", "Laravel"]}/>
+                    <ProjectCard image_src={github} title={"Bonobo"} text={"At Bonobo S.r.L I had the pleasure to work in a young and fast-paced envinroment."} badge={["Github"]}/>
                 </Carousel.Slide>
             </Carousel>
         </>

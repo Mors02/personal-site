@@ -5,16 +5,22 @@ import fight from "../Gifs/fight.gif";
 import messy_inventory from "../Gifs/messy inventory.PNG"
 import death from "../Gifs/death.gif";
 import { Image, Flex, Text, Button, Box } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function BimboAndMe() {
 
-    const bodyCss = "text-3xl mt-2 ml-4 text-justify";
-    const titleCss = "text-4xl mt-3";
+    const bodyCss = "desktop:text-3xl mobile:text-md mt-2 ml-4 text-justify";
+    const titleCss = "desktop:text-4xl mobile:text-sm mt-3";
     const highlight = "font-semibold text-mid"
+
+    const matches = useMediaQuery('(min-width: 56.25em)');
+
+    let gifHeight = matches? 300 : 200;
+    let gifWidth = matches? 400: 250;
     return (
         <ProjectArea title="Bimbo & Me" id="bimbo">
-            <Flex>
-                <Image src={inventory} className="ml-4" height={300} width={400}/>
+            <Flex direction={matches? "row" : "column"}>
+                <Image src={inventory} className="ml-4" height={gifHeight} width={gifWidth}/>
                 <Text className={bodyCss} fw={400}>
                     <Text component="span"className={titleCss} fw={600}>The idea for this game started when I wanted to create a <span className={highlight}>complex inventory system.</span></Text>
                     <br />
@@ -25,7 +31,7 @@ export default function BimboAndMe() {
             </Flex>
             <Text className={bodyCss}>Also, items could take more than one slot, creating the necessity for <span className={highlight}>composite sprites</span>. This complicates the logic of the items, since more than one instance of them
             exists inside the inventory.</Text>
-            <Flex>
+            <Flex direction={matches? "row" : "column"}>
                 <Text className={bodyCss} fw={400}>
                     <Text component="span"className={titleCss} fw={600}>Each weapon is the result of <span className={highlight}>multiple scripts</span> that control its behaviour.</Text>
                     <br />
@@ -34,10 +40,10 @@ export default function BimboAndMe() {
                     Each item has <span className={highlight}>3 scripts</span>: one for setting up the composite sprites in the inventory when you pick it up, one for the upgrade behaviour, one for the actual effect of the weapon or passive item.
                     All of this for an ever expanding loot pool to let the player express their playstyle to the max.
                 </Text>
-                <Image src={fight} className="mt-3 ml-4" height={300} width={400}/>
+                <Image src={fight} className="mt-3 ml-4" height={gifHeight} width={gifWidth}/>
             </Flex>
-            <Flex>
-                <Image src={death} className="mt-5 ml-4" height={300} width={400}/>
+            <Flex direction={matches? "row" : "column"}>
+                <Image src={death} className="mt-5 ml-4" height={gifHeight} width={gifWidth}/>
                 <Text className={bodyCss} fw={400}>
                     <Text component="span"className={titleCss} fw={600}>When you die, it's <span className={highlight}>not over yet</span>.</Text>
                     <br />
@@ -45,7 +51,7 @@ export default function BimboAndMe() {
                     Each time a generation passes, you can <span className={highlight}>improve your genes</span> to get better and stronger. And when you die, you  <span className={highlight}>will play as your own child</span>, with everything you have
                     left him with. So be prepared when <span className={highlight}>your time eventually comes...</span>
                 </Text>
-                <Image src={messy_inventory} className="mt-4 ml-4" height={300} width={300}/>
+                <Image src={messy_inventory} className="mt-4 ml-4" height={gifHeight} width={gifHeight}/>
             </Flex>
             <Box  className="mt-6 mx-auto w-64">
                 <Button className="w-64 h-12" color="light2">
