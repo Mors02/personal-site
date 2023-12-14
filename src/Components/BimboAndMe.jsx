@@ -19,7 +19,7 @@ export default function BimboAndMe() {
     let gifWidth = matches? 400: 250;
     return (
         <ProjectArea title="Bimbo & Me" id="bimbo">
-            <Flex direction={matches? "row" : "column"}>
+           { /*<Flex direction={matches? "row" : "column"}>
                 <Image src={inventory} className="ml-4" height={gifHeight} width={gifWidth}/>
                 <Text className={bodyCss} fw={400}>
                     <Text component="span"className={titleCss} fw={600}>The idea for this game started when I wanted to create a <span className={highlight}>complex inventory system.</span></Text>
@@ -52,6 +52,31 @@ export default function BimboAndMe() {
                     left him with. So be prepared when <span className={highlight}>your time eventually comes...</span>
                 </Text>
                 <Image src={messy_inventory} className="mt-4 ml-4" height={gifHeight} width={gifHeight}/>
+            </Flex>
+            <Box  className="mt-6 mx-auto w-64">
+                <Button className="w-64 h-12" color="light2">
+                    Play it now on Itch.io
+                </Button>
+            </Box> */}
+            <Flex direction={matches? "row" : "column"} className="mx-auto w-11/12">
+                <Flex direction="column" className="text-center">
+                    <Text className={titleCss + " text-mid"} fw={600}>Build</Text>
+                    <Image src={inventory} className="mt-3 ml-4" height={gifHeight} width={gifWidth}/>
+                </Flex>
+
+                <Flex direction="column" className="text-center">
+                    <Text className={titleCss + " text-mid"} fw={600}>Fight</Text>
+                    <Image src={fight} className="mt-3 ml-4" height={gifHeight} width={gifWidth}/>
+                </Flex>
+
+                <Flex direction="column" className="text-center">
+                    <Text className={titleCss + " text-mid"} fw={600}>Retry</Text>
+                    <Image src={death} className="mt-3 ml-4" height={gifHeight} width={gifWidth}/>
+                </Flex>
+            </Flex>
+            <Flex>
+                <Text component="span"className={bodyCss} fw={400}>A simple Vampire Survivor inspired game, with a <span className={highlight}>complex inventory system</span> that let the
+                 player explore different builds while defeating <span className={highlight}>neverending waves</span> of enemies.</Text>
             </Flex>
             <Box  className="mt-6 mx-auto w-64">
                 <Button className="w-64 h-12" color="light2">
